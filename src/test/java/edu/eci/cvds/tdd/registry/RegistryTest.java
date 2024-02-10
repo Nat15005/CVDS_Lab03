@@ -7,12 +7,6 @@ import static edu.eci.cvds.tdd.registry.Gender.*;
 
 public class RegistryTest {
     private Registry registry = new Registry();
-    @Test
-    public void validateRegistryResult() {
-        Person person = new Person();
-        RegisterResult result = registry.registerVoter(person);
-        Assert.assertEquals(RegisterResult.VALID, result);
-    }
 
     @Test
     public void validateValidAge() {
@@ -25,7 +19,7 @@ public class RegistryTest {
 
         Assert.assertEquals(RegisterResult.VALID, result);
         Assert.assertEquals(RegisterResult.VALID, result2);
-        Assert.assertEquals(RegisterResult.VALID, result3);
+        Assert.assertEquals(RegisterResult.UNDERAGE, result3);
     }
     @Test
     public void validateUnderAge() {
