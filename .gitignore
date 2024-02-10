@@ -2,4 +2,4 @@
 /target/
 
 # Ignorar directorio .idea generado por IntelliJ IDEA
-/.idea/
+.idea/
