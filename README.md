@@ -273,6 +273,8 @@ $ mvn test
 
 Revise cual es la diferencia. 
 
+-> mvn package se utiliza para compilar y empaquetar el proyecto, mvn test se utiliza específicamente para ejecutar pruebas unitarias
+
 ![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/6e6f4d03-7fb8-49b9-959d-5f1893436ee9)
 
 #### FINALIZAR EL EJERCICIO
@@ -287,11 +289,14 @@ Piense en los casos de equivalencia que se pueden generar del ejercicio para la 
   
 Complete la implementación de la clase RegistryTest.java con (al menos) un método por cada clase de equivalencia, creando diferentes personas y validando que el resultado sea el esperado.
 
-![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/781b0433-b5d6-4311-a0a8-7df383250feb)
+![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/65de037f-9946-42e9-a495-a5dbd05297dc)
 
-![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/b113a544-87df-4c36-8e0a-5d0c461d78d3)
+![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/2c4c1399-c20a-43a1-b029-9a66f8c32cec)
+
+![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/7cb0c269-d837-42bf-8d07-c758162632af)
 
 
 Complete la implementación del método registerVoter en la clase Registry.java para retornar el resultado esperado según la entrada.
 
+![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/bace5b9e-09e6-44ab-b343-311090836a6b)
 
