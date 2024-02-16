@@ -2,7 +2,7 @@
 ### CLASES DE EQUIVALENCIA
 ### CREAR UN PROYECTO CON MAVEN
 En el directorio de trabajo ejecutar el comando necesario para crear/generar un proyecto maven basado en un arquetipo:
-``` 
+``` xml
 Grupo (groupId): edu.eci.cvds
 Artefacto (artifactId): ClasesEquivalencia
 Paquete (package): edu.eci.cvds.tdd
@@ -24,7 +24,8 @@ Ingrese a la pestaña de Maven y haga click en el texto de la dependencia para c
 
 - Agregue/Reemplace la dependencia copiada a la sección de dependencias.
 
-![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/c3f77774-535a-4859-a5f2-26578ed7e696)
+![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/32483a14-3513-40c1-872c-167548676a54)
+
 
 - Hay que cambiar la versión delcompilador de Java a la versión 8, para ello, agregue la sección properties antes de la sección de dependencias:
 
@@ -300,3 +301,42 @@ Complete la implementación del método registerVoter en la clase Registry.java 
 
 ![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/bace5b9e-09e6-44ab-b343-311090836a6b)
 
+## EJERCICIO "DESCUENTO DE TARIFAS"
+### REALIZAR DISEÑO DE PRUEBAS
+
+Para realizar de forma correcta el diseño de sus pruebas responda las preguntas que se encuentran en el siguiente documento.
+
+Adjunto en repositorio
+
+### IMPLEMENTACIÓN DE LAS PRUEBAS
+
+Descargue el archivo aerodescuentos.jar y adicione esta nueva dependencia en el archivo pom.xml de su proyecto.
+
+![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/8472dc46-6c1a-43f2-85f6-df11a24f2831)
+
+
+Para adicionar una librería personalizada al repositorio local de maven puede ejecutar el siguiente comando.
+
+```
+$ mvn install:install-file -Dfile=aerodescuentos-1.0.0.jar -DgroupId=edu.eci.cvds -DartifactId=aerodescuentos -Dversion=1.0.0 -Dpackaging=jar
+```
+
+Cree el archivo TarifasTest.java en el directorio src/test/java/edu/eci/cvds/tdd/aerodescuentos.
+
+![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/da2296d7-1eb4-4d97-a8ee-4ca7a7471b56)
+
+
+Realice la implementación de las pruebas propuestas en la etapa de diseño de pruebas en esta clase. Para sus pruebas debe usar el método calculoTarifa de la clase edu.eci.cvds.tdd.aerodescuentos.CalculadorDescuentos, que se encuentran dentro del JAR de la librería personalizada.
+
+![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/6b1cb946-492d-4622-a942-54447dc0a4d4)
+
+![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/48df1f6a-fc4e-43d1-bef5-eb8da55cd4c2)
+
+![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/6a667037-c3e4-45cb-a167-01a4afaddc0c)
+
+![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/9bcfcaf9-8b9c-4d49-9259-fe57160be3d5)
+
+
+Ejecute el comando de Maven para las fases de compilación y pruebas. Verifique el resultado exitoso de todas las pruebas y el reporte generado.
+
+![image](https://github.com/Nat15005/CVDS_Lab03/assets/111907712/6216ab9d-34cc-48ca-ba29-a60afb7bedc8)
